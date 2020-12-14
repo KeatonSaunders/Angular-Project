@@ -8,4 +8,20 @@
     
 </div>
 
+<div class="container">
+
+        <p>Click here to get a customized welcome message: </p>
+
+        <button (click)="getWelcomeMessage()" class="btn btn-success">Get Welcome Message</button>
+            
+</div>
+
+<div class="container" *ngIf="welcomeMessageFromService">
+
+        <h2>Your customised welcome message.</h2>
+        
+        {{ welcomeMessageFromService }}
+                    
+</div>
+
 
